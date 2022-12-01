@@ -140,11 +140,11 @@ postgresql:
     pullSecrets: []
   persistence:
     # -- whether to enable persistent storage for the postgres container or not
-    enabled: false
+    enabled: true
     # -- existing persistent volume claim name to be used to store posgres data
     existing_claim_name: false
     # -- size of the PVC to be automatically generated
-    storage_size: 5Gi
+    storage_size: 2Gi
     # -- storage PVC storageclass to use
     #storage_class: my-storage-class
   service:
